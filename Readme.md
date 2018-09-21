@@ -26,16 +26,17 @@ rojo_nuevo[x, y] =
 ) + complemento
 ```
 
-Donde ```c# r[x,y] ``` corresponde al componente rojo del pixel (x,y) de la imagen original y m[i,j] al
-valor de la matriz en la posición (i,j), donde 0 <= i, j <= 2 . Es decir, el coeficiente del centro
+Donde ``` r[x,y] ``` corresponde al componente rojo del pixel (x,y) de la imagen original y ```m[i,j]``` al
+valor de la matriz en la posición (i,j), donde ```0 <= i``` , ```j <= 2``` . Es decir, el coeficiente del centro
 es el peso del pixel que se está filtrando, y el resto el peso de todos los pixels que lo rodean.
 En el caso del suavizado, sería:
 ```c#
 rojo_nuevo[x, y] =
-((
-r[x-1,y-1] * 1 + r[x,y-1] * 1 + r[x+1,y-1] * 1 +
-r[x-1,y] * 1 + r[x,y] * 1 + r[x+1,y] * 1 +
-r[x-1,y+1] * 1 + r[x,y+1] * 1 + r[x+1,y+1] * 1
+(
+    (
+        r[x-1,y-1] * 1 + r[x,y-1] * 1 + r[x+1,y-1] * 1 +
+        r[x-1,y] * 1 + r[x,y] * 1 + r[x+1,y] * 1 +
+        r[x-1,y+1] * 1 + r[x,y+1] * 1 + r[x+1,y+1] * 1
 ) / 9) + 0
 ```
 Lo que equivale a hacer un promedio del valor del componente rojo para cada uno de los
