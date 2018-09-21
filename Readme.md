@@ -11,7 +11,9 @@ Para aplicar un filtro de convolución, se puede utilizar una matriz de 3x3, don
 elemento de la matriz es un coeficiente por el cual se debe multiplicar al color del vecino, un
 divisor y un complemento.
 Por ejemplo, para un posible filtro de suavizado, se puede utilizar una matriz (m) como:
+
 ![alt text](https://github.com/fedemartino/CompAndDel/blob/master/matrix.png)
+
 Un divisor de 9 y un complemento de 0.
 ```c#
 rojo_nuevo[x, y] =
