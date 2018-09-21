@@ -1,3 +1,5 @@
+# Composición y Delegación
+
 Esta librería implementa un patrón conocido como Pipes and Filters. Esta arquitectura de software consta de dividir tareas complejas en tareas más pequeñas y sencillas que pueden ser ejecutas en serie o paralelo: https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters .
 En este caso, utilizaremos el patrón de Pipes and Filters aplicado a imagenes y modificaciones aplicadas a ellas (filtros).
 
