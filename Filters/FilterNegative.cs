@@ -7,12 +7,8 @@ using System.Diagnostics;
 
 namespace CompAndDel.Filters
 {
-    public class FilterNegative : NamedObject, IFilter
+    public class FilterNegative : IFilter
     {
-        
-        public FilterNegative(string name) : base(name)
-        {
-        }
         /// <summary>
         /// Recibe una imagen y la retorna con un filtro del tipo negativo aplicado
         /// </summary>

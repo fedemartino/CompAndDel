@@ -14,9 +14,6 @@ namespace CompAndDel
         /// </summary>
         /// <param name="picture">la imagen a enviar</param>
         IPicture Send(IPicture picture);
-        /// <summary>
-        /// El nombre del pipe.
-        /// </summary>
-        String Name { get; }
+
     }
 }

@@ -4,17 +4,15 @@ using CompAndDel;
 
 namespace CompAndDel.Filters
 {
-    public class FilterBlurConvolution : NamedObject, IFilter
+    public class FilterBlurConvolution : IFilter
     {
         protected int[,] matrizParametros;
         protected int complemento, divisor;
-        public FilterBlurConvolution() : base ("FilterComplex")
-        { }
         /// <summary>
         /// Filtro complejo que suaviza los bordes de una imagen.
         /// </summary>
         /// <param name="name">Nombre del objeto</param>
-        public FilterBlurConvolution(string name) : base (name)
+        public FilterBlurConvolution()
         {
             this.matrizParametros = new int[3, 3];
             this.complemento = 0;

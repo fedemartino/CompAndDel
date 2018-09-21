@@ -8,13 +8,8 @@ using System.Diagnostics;
 
 namespace CompAndDel.Filters
 {
-    public class FilterGreyscale : NamedObject, IFilter
+    public class FilterGreyscale : IFilter
     {
-        public FilterGreyscale() : this("grises")
-        { }
-        public FilterGreyscale(string name) : base (name)
-        {
-        }
         /// <summary>
         /// Recibe una imagen y la retorna con un filtro de escala de grises aplicado.
         /// </summary>

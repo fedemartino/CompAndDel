@@ -11,11 +11,6 @@ namespace CompAndDel
     public interface IFilter
     {
         /// <summary>
-        /// El nombre del filtro.
-        /// </summary>
-        String Name { get; }
-
-        /// <summary>
         /// Procesa la imagen pasada por parametro y retorna la misma imagen o una nueva.
         /// </summary>
         /// <param name="image">La imagen a procesar</param>

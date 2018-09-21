@@ -6,7 +6,7 @@ using CompAndDel;
 
 namespace CompAndDel.Filters.Pipes
 {
-    class PipeSerial : NamedObject, IPipe
+    class PipeSerial : IPipe
     {
         protected IFilter filtro;
         protected IPipe nextPipe;
@@ -16,7 +16,7 @@ namespace CompAndDel.Filters.Pipes
         /// </summary>
         /// <param name="filtro">Filtro que se debe aplicar sobre la imagen</param>
         /// <param name="nextPipe">Siguiente cañería</param>
-        public PipeSerial(string name, IFilter filtro, IPipe nextPipe) : base(name)
+        public PipeSerial(IFilter filtro, IPipe nextPipe)
         {
             this.nextPipe = nextPipe;
             this.filtro = filtro;

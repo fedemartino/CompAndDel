@@ -7,23 +7,16 @@ using System.Diagnostics;
 
 namespace CompAndDel.Filters
 {
-    class FilterPipe : NamedObject, IFilter
+    class FilterPipe : IFilter
     {
         IPipe pipe;
         /// <summary>
         /// El filtro envia una imagen a una cañeria y luego retorna la misma imagen. 
         /// </summary>
         /// <param name="pipe">Cañerìa a la cual se le va a enviar la imagen</param>
-        public FilterPipe(IPipe pipe):this("filtroPipe")
+        public FilterPipe(String name, IPipe pipe) 
         {
             this.pipe = pipe;
-        }
-        public FilterPipe(String name, IPipe pipe) : base (name)
-        {
-            this.pipe = pipe;
-        }
-        public FilterPipe(String name) : base (name)
-        {
         }
         /// <summary>
         /// Envia la imagen a la cañeria pipe y retorna la misma imagen.

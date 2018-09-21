@@ -7,11 +7,9 @@ using CompAndDel;
 
 namespace CompAndDel.Filters.Pipes
 {
-    class PipeNull : NamedObject, IPipe
+    class PipeNull : IPipe
     {
         IPicture image;
-        public PipeNull(string name) : base(name)
-        {}
         /// <summary>
         /// Recibe una imagen, la guarda en una variable image y la retorna.
         /// </summary>

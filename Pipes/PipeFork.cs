@@ -7,7 +7,7 @@ using CompAndDel;
 
 namespace CompAndDel.Filters.Pipes
 {
-    class PipeFork : NamedObject, IPipe
+    class PipeFork : IPipe
     {
         IPipe next2Pipe;
         IPipe nextPipe;
@@ -18,7 +18,7 @@ namespace CompAndDel.Filters.Pipes
         /// <param name="tipoFiltro">Tipo de filtro que se debe aplicar sobre la imagen. Se crea un nuevo filtro con los parametros por defecto</param>
         /// <param name="nextPipe">Siguiente cañeria con filtro</param>
         /// <param name="next2Pipe">Siguiente cañeria sin filtro</param>
-        public PipeFork(string name, IPipe nextPipe, IPipe next2Pipe) : base(name)
+        public PipeFork(IPipe nextPipe, IPipe next2Pipe) 
         {
             this.next2Pipe = next2Pipe;
             this.nextPipe = nextPipe;           
