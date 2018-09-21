@@ -1,4 +1,4 @@
-Esta librería implementa un patrón conocido como Pipes and Filters. Esta arquitectura de software consta de dividir tareas complejas en tareas más pequeñas y sencillas que pueden ser ejecutas en serie o paralelo: https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters
+Esta librería implementa un patrón conocido como Pipes and Filters. Esta arquitectura de software consta de dividir tareas complejas en tareas más pequeñas y sencillas que pueden ser ejecutas en serie o paralelo: https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters .
 En este caso, utilizaremos el patrón de Pipes and Filters aplicado a imagenes y modificaciones aplicadas a ellas (filtros).
 
 Uno de los filtros implementados aqui es un filtro de convolución. Los filtros de convolución son una familia de filtros
@@ -41,6 +41,9 @@ rojo_nuevo[x, y] =
 ```
 Lo que equivale a hacer un promedio del valor del componente rojo para cada uno de los
 pixels.
+
+El resultado final sería así:
+![original](https://upload.wikimedia.org/wikipedia/commons/5/50/Vd-Orig.png) => ![Blur](https://upload.wikimedia.org/wikipedia/commons/0/04/Vd-Blur2.png)
 
 Para poder utlizar esta libreria, se debe primer cargar una imagen en un IPicture:
 ```c#
