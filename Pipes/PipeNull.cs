@@ -5,7 +5,7 @@ using System.Text;
 using CompAndDel;
 
 
-namespace CompAndDel.Filtros.Pipes
+namespace CompAndDel.Filters.Pipes
 {
     class PipeNull : NamedObject, IPipe
     {

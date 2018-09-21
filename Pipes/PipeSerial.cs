@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using CompAndDel;
 
-namespace CompAndDel.Filtros.Pipes
+namespace CompAndDel.Filters.Pipes
 {
     class PipeSerial : NamedObject, IPipe
     {
