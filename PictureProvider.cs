@@ -8,12 +8,10 @@ namespace CompAndDel
     {
         public IPicture GetPicture(string imgPath)
         {
-            //byte[] pixels;
             Picture p = new Picture(1,1);
             using (var img = Image.Load(imgPath))
             {
                 p.Resize(img.Width,img.Height);
-                //pixels = img.SavePixelData();
                 for (int h = 0;h <img.Height; h++)
                 {
                     for (int w = 0;w <img.Width; w++)
